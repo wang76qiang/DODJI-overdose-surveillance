@@ -1,0 +1,10 @@
+variant,rho,n,description
+WHO-GBD divergence variant,0.89,47,Alternative DODJI based on WHO-GBD divergence alone
+GBD uncertainty variant,0.78,47,Alternative DODJI based on GBD uncertainty width alone
+Opioid-only variant,0.78,47,Opioid overdose only
+All-ages variant,0.79,47,No age standardisation
+Age-band standardisation (15-49),0.77,47,Age-band standardisation
+Age-band standardisation (50-69),0.81,47,Age-band standardisation
+Age-band standardisation (70+),0.84,47,Age-band standardisation
+WHO Mortality Database cross-source variant,0.71,30,Independent WHO mortality data source
+Civil-registration-proxy variant,0.19,30,Civil registration proxy source

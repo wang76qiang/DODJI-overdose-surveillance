@@ -1,0 +1,48 @@
+﻿country,map_join_name,is_microstate,rank_shift_up,mortality_rank,combined_priority_rank
+Albania,Albania,0,30,32,2
+Andorra,Andorra,1,26,47,21
+Australia,Australia,0,-5,6,11
+Austria,Austria,0,7,19,12
+Belarus,Belarus,0,-4,12,16
+Belgium,Belgium,0,-3,20,23
+Bosnia and Herzegovina,Bosnia and Herzegovina,0,19,45,26
+Bulgaria,Bulgaria,0,31,36,5
+Canada,Canada,0,-6,2,8
+Chile,Chile,0,-5,42,47
+Costa Rica,Costa Rica,0,1,41,40
+Croatia,Croatia,0,0,24,24
+Cyprus,Cyprus,0,9,26,17
+Czechia,Czechia,0,14,33,19
+Denmark,Denmark,0,-18,10,28
+Estonia,Estonia,0,0,7,7
+Finland,Finland,0,-17,5,22
+France,France,0,-25,16,41
+Germany,Germany,0,-20,17,37
+Iceland,Iceland,1,0,3,3
+Israel,Israel,0,-7,25,32
+Italy,Italy,0,-8,37,45
+Japan,Japan,0,0,44,44
+Latvia,Latvia,0,-5,15,20
+Lithuania,Lithuania,0,-7,11,18
+Luxembourg,Luxembourg,1,0,14,14
+Malta,Malta,1,13,22,9
+Mexico,Mexico,0,-6,40,46
+Monaco,Monaco,1,42,43,1
+Netherlands,Netherlands,0,-11,28,39
+New Zealand,New Zealand,0,5,18,13
+North Macedonia,North Macedonia,0,32,38,6
+Norway,Norway,0,-35,8,43
+Poland,Poland,0,5,35,30
+Portugal,Portugal,0,2,29,27
+Republic of Moldova,Moldova,0,2,31,29
+Russian Federation,Russia,0,-25,9,34
+San Marino,San Marino,1,31,46,15
+Serbia,Serbia,0,9,34,25
+Slovenia,Slovenia,0,17,27,10
+South Korea,South Korea,0,-3,30,33
+Spain,Spain,0,-8,23,31
+Switzerland,Switzerland,0,-25,13,38
+Turkey,Turkey,0,3,39,36
+Ukraine,Ukraine,0,-14,21,35
+United Kingdom,United Kingdom,0,-38,4,42
+United States of America,United States of America,0,-3,1,4

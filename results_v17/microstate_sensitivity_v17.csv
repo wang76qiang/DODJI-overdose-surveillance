@@ -1,0 +1,7 @@
+﻿"sample","validation","r","n"
+"all_countries","DODJI vs death under-registration","0.51","43"
+"all_countries","DODJI vs external surveillance capacity","-0.467","43"
+"all_countries","DODJI vs log GDP","0","47"
+"excluding_microstates","DODJI vs death under-registration","0.39","37"
+"excluding_microstates","DODJI vs external surveillance capacity","-0.316","37"
+"excluding_microstates","DODJI vs log GDP","-0.385","41"

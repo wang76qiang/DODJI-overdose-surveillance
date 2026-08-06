@@ -1,0 +1,11 @@
+domain,metric,value,p_value,n,interpretation
+Measurement validity,GDP correlation (raw data quality),-0.46,0.0013,47,Unadjusted data quality is GDP-dependent
+Measurement validity,GDP correlation (DODJI),0.0,,47,Residualisation removes GDP dependence
+Internal consistency,WHO-GBD divergence correlation,0.91,<0.001,47,DODJI behaves as designed
+Internal consistency,GBD uncertainty width correlation,0.83,<0.001,47,DODJI behaves as designed
+External credibility,Death under-registration correlation,0.51,<0.001,43,Higher DODJI associated with more under-registration
+External credibility,External surveillance capacity correlation,-0.47,<0.001,43,Higher DODJI associated with lower capacity
+Specificity,Opioid-agonist therapy coverage correlation,0.09,0.72,47,DODJI is not a treatment-access proxy
+Specificity,GBD garbage-code share correlation,-0.08,0.61,47,DODJI is not a generic coding proxy
+Small-state sensitivity,Death under-registration correlation (excluding microstates),0.39,<0.001,37,External correlation weakens but persists
+Robustness,WHO-GBD cross-source variant correlation,0.71,<0.001,30,DODJI captures overdose-specific signal

@@ -1,0 +1,17 @@
+country,iso3,who_region,income_group,stage,rationale
+South Africa,ZAF,AFR,Upper middle,2,Highest overdose mortality data availability in region
+Nigeria,NGA,AFR,Lower middle,3,Large population; verbal autopsy data emerging
+Kenya,KEN,AFR,Lower middle,3,DSS sites and injury surveillance pilots
+India,IND,SEARO,Lower middle,2,Million Death Study; COD data improving
+Thailand,THA,SEARO,Upper middle,2,Well-developed vital registration for LMIC
+Indonesia,IDN,SEARO,Lower middle,3,Large archipelago; limited forensic toxicology
+Egypt,EGY,EMRO,Lower middle,3,Population surveillance but drug overdose coding weak
+Pakistan,PAK,EMRO,Lower middle,3,Verbal autopsy-based; limited medico-legal capacity
+China,CHN,WPRO,Upper middle,2,Disease Surveillance Points; overdose data partial
+Philippines,PHL,WPRO,Lower middle,3,Drug-related violence complicates overdose attribution
+Viet Nam,VNM,WPRO,Lower middle,3,Rapidly changing drug markets; limited toxicology
+Brazil,BRA,AMRO,Upper middle,2,Already in sample; can anchor LMIC comparator
+Colombia,COL,AMRO,Upper middle,2,Already in sample
+Mexico,MEX,AMRO,Upper middle,2,Already in sample
+Peru,PER,AMRO,Upper middle,2,Already in sample
+Guatemala,GTM,AMRO,Upper middle,2,Already in sample

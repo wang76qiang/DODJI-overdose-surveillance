@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.Rlibs/
+Rplots.pdf
+run.log
+run_r_figures.log
+.DS_Store

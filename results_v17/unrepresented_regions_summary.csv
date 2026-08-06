@@ -1,0 +1,7 @@
+who_region,region_name,current_n_countries,status
+AFR,Africa,0,Not represented
+AMRO,Americas,5,Well represented
+EMRO,Eastern Mediterranean,0,Not represented
+EURO,Europe,37,Well represented
+SEARO,South-East Asia,0,Not represented
+WPRO,Western Pacific,4,Under-represented

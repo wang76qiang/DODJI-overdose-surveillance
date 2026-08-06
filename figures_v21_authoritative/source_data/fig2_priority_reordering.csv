@@ -1,0 +1,48 @@
+country,mortality_rank,combined_priority_rank,rank_shift,reclassification,regime
+Monaco,43,1,42,Up >=10,Insufficient exposure data
+Albania,32,2,30,Up >=10,Low-burden / protected
+Iceland,3,3,0,Stable,Medical-system-driven
+United States of America,1,4,-3,Stable,Medical-system-driven
+Bulgaria,36,5,31,Up >=10,Low-burden / protected
+North Macedonia,38,6,32,Up >=10,Data-quality-limited
+Estonia,7,7,0,Stable,Data-quality-limited
+Canada,2,8,-6,Stable,Medical-system-driven
+Malta,22,9,13,Up >=10,Low-burden / protected
+Slovenia,27,10,17,Up >=10,Data-quality-limited
+Australia,6,11,-5,Stable,Medical-system-driven
+Austria,19,12,7,Stable,Medical-system-driven
+New Zealand,18,13,5,Stable,Medical-system-driven
+Luxembourg,14,14,0,Stable,Low-burden / protected
+San Marino,46,15,31,Up >=10,Insufficient exposure data
+Belarus,12,16,-4,Stable,Low-burden / protected
+Cyprus,26,17,9,Stable,Data-quality-limited
+Lithuania,11,18,-7,Stable,Low-burden / protected
+Czechia,33,19,14,Up >=10,Data-quality-limited
+Latvia,15,20,-5,Stable,Low-burden / protected
+Andorra,47,21,26,Up >=10,Data-quality-limited
+Finland,5,22,-17,Down >=10,Low-burden / protected
+Belgium,20,23,-3,Stable,Medical-system-driven
+Croatia,24,24,0,Stable,Data-quality-limited
+Serbia,34,25,9,Stable,Low-burden / protected
+Bosnia and Herzegovina,45,26,19,Up >=10,Insufficient exposure data
+Portugal,29,27,2,Stable,Low-burden / protected
+Denmark,10,28,-18,Down >=10,Medical-system-driven
+Republic of Moldova,31,29,2,Stable,Insufficient exposure data
+Poland,35,30,5,Stable,Low-burden / protected
+Spain,23,31,-8,Stable,Low-burden / protected
+Israel,25,32,-7,Stable,Low-burden / protected
+South Korea,30,33,-3,Stable,Low-burden / protected
+Russian Federation,9,34,-25,Down >=10,Low-burden / protected
+Ukraine,21,35,-14,Down >=10,Data-quality-limited
+Turkey,39,36,3,Stable,Data-quality-limited
+Germany,17,37,-20,Down >=10,Medical-system-driven
+Switzerland,13,38,-25,Down >=10,Medical-system-driven
+Netherlands,28,39,-11,Down >=10,Low-burden / protected
+Costa Rica,41,40,1,Stable,Low-burden / protected
+France,16,41,-25,Down >=10,Low-burden / protected
+United Kingdom,4,42,-38,Down >=10,Low-burden / protected
+Norway,8,43,-35,Down >=10,Low-burden / protected
+Japan,44,44,0,Stable,Low-burden / protected
+Italy,37,45,-8,Stable,Low-burden / protected
+Mexico,40,46,-6,Stable,Low-burden / protected
+Chile,42,47,-5,Stable,Low-burden / protected

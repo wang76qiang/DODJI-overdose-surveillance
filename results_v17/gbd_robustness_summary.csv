@@ -1,0 +1,5 @@
+check,n,spearman_rho,spearman_p,regime_stability,priority_I_jaccard
+Primary vs GBD all-drug age-standardised rate,47,0.789,0.0,0.511,0.429
+Primary vs GBD opioid-only age-standardised rate,47,0.777,0.0,0.553,0.429
+Primary vs GBD all-drug all-ages rate,47,0.786,0.0,0.511,0.429
+Primary vs GBD+WHO divergence (European subset),30,0.71,0.0,0.4,0.429

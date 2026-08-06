@@ -1,0 +1,2 @@
+check,n_countries,spearman_rho,spearman_p,regime_stability,top10_jaccard
+Non-GBD WHO-GHO/WB DODJI variant,47,0.185,0.2123,0.277,0.176

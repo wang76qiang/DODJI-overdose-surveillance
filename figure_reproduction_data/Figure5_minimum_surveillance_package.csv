@@ -1,0 +1,12 @@
+maturity_stage,component,capability
+Foundation,Death registration,Complete and timely death registration
+Foundation,Coding,"Standardised overdose coding (ICD-10 X40-X44, X60-X64, X85, Y10-Y14)"
+Foundation,Toxicology,Basic forensic toxicology
+Foundation,Audit,External mortality audit
+Foundational-intermediate,Reporting,Near-real-time overdose mortality reporting
+Foundational-intermediate,Toxicology,Routine toxicology panels
+Foundational-intermediate,Treatment,Treatment-coverage measurement
+Intermediate,Linkage,"Linked emergency, hospital, treatment, toxicology, and mortality records"
+Intermediate,Intelligence,Exposure and market intelligence
+Advanced,Equity,"Equity stratifiers (age, sex, socioeconomic position, housing, incarceration)"
+Advanced,Evaluation,Prospective evaluation designs
