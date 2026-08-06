@@ -1,7 +1,10 @@
 """
 did_policy_analysis.py
 
-Difference-in-differences analysis of overdose-mortality policy adoption.
+Template for a difference-in-differences analysis of overdose-mortality policy adoption.
+
+The author-coded policy-adoption-year input was not finalised. No policy-effect point estimates
+are part of this release; see README.md and Supplementary Table S3.
 
 This script provides a reproducible Python workflow that:
   1. Estimates an event-study specification using two-way fixed effects (TWFE)
@@ -16,7 +19,7 @@ estimation, and inference). For publication-grade group-time ATT estimates we
 recommend the R did package (Callaway & Sant'Anna, 2021) or the did2s package
 (Gardner, 2022).
 
-Inputs (to be created by authors):
+Inputs:
     - results_v17/policy_adoption_years.csv
       Columns: country, first_treat_year, policy_type
       where first_treat_year is the first year the country broadly implemented
@@ -24,7 +27,7 @@ Inputs (to be created by authors):
       supervised consumption services, or decriminalisation/partial legal regulation.
       Countries never treated should have first_treat_year = 0 or missing.
 
-    - results_v17/annual_mortality_panel.csv
+    - results_v17/annual_mortality_panel.csv (deposited; derived from annual_dodji_panel.csv)
       Columns: country, year, log_asdr (log age-standardised death rate)
 
 Outputs:

@@ -1,7 +1,12 @@
 __pycache__/
-*.pyc
-.Rlibs/
-Rplots.pdf
-run.log
-run_r_figures.log
+*.py[cod]
+.venv/
+.Rhistory
+.RData
 .DS_Store
+Thumbs.db
+*.log
+results_v17/did_event_study.csv
+results_v17/did_group_att.csv
+results_v17/did_overall_att.csv
+results_v17/did_pre_trend_test.csv

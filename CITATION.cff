@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite this software and data release."
+title: "DODJI overdose surveillance: reproducibility materials"
+type: software
+version: 1.0.0
+date-released: 2026-08-06
+doi: "10.5281/zenodo.21823300"
+url: "https://github.com/wang76qiang/DODJI-overdose-surveillance"
+repository-code: "https://github.com/wang76qiang/DODJI-overdose-surveillance"
+license: MIT
+authors:
+  - family-names: Fang
+    given-names: Hongjuan
+    orcid: "https://orcid.org/0000-0001-8321-9902"
+    affiliation: "Department of Endocrinology, Aviation General Hospital, Beijing, China"
+  - family-names: Wang
+    given-names: Lili
+    affiliation: "Chinese PLA Center for Disease Control and Prevention, Beijing, China"
+  - family-names: Wang
+    given-names: Qiang
+    orcid: "https://orcid.org/0000-0003-4392-0889"
+    affiliation: "Chinese PLA Center for Disease Control and Prevention, Beijing, China"
+
