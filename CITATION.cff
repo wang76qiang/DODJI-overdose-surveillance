@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "If you use these materials, please cite this software and data release."
 title: "DODJI overdose surveillance: reproducibility materials"
 type: software
-version: 1.0.0
-date-released: 2026-08-06
-doi: "10.5281/zenodo.21823300"
+version: 1.1.0
+date-released: 2026-08-07
+doi: "10.5281/zenodo.21830370"
 url: "https://github.com/wang76qiang/DODJI-overdose-surveillance"
 repository-code: "https://github.com/wang76qiang/DODJI-overdose-surveillance"
 license: MIT

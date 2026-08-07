@@ -1,12 +1,12 @@
 # DODJI: Data justice in overdose surveillance
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21823300.svg)](https://doi.org/10.5281/zenodo.21823300)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21823299.svg)](https://doi.org/10.5281/zenodo.21830370)
 
 Reproducibility materials for the manuscript **"Data justice in overdose surveillance: a governance framework for counting drug-overdose deaths before crises become visible"**.
 
 - GitHub: https://github.com/wang76qiang/DODJI-overdose-surveillance
-- Archived release: https://doi.org/10.5281/zenodo.21823300
-- Version: 1.0.0
+- Archived release: https://doi.org/10.5281/zenodo.21830370
+- Version: 1.1.0
 
 ## Contents
 
@@ -30,9 +30,9 @@ The restricted source datasets from IHME, WHO, World Bank, INCB, EMCDDA, and oth
 | Predictive validation / Table S2 | Reproducible from deposited panel | `results_v17/annual_dodji_panel.csv` |
 | Robustness / Tables S5-S6 | Reproducible from deposited outputs and scripts | `results_v17/` |
 | Figures 1-7 and S1-S3 | Reproducible from deposited source-data CSVs and scripts | `figures_v21_authoritative/source_data/`, `redesign_r/`, `make_supplementary_figures.py` |
-| Policy event-study / Table S3 | Specification and template only | `did_policy_analysis.py`; the author-coded adoption-year input was not finalised and no point estimates are deposited or claimed |
+| Policy event-study / Table S3 | Adoption-year data finalised; estimates remain unreported | `results_v17/policy_adoption_years.csv`, source table, codebook, validator, and guarded exploratory template |
 
-The policy event-study script requires `results_v17/policy_adoption_years.csv`, which is not part of the archived analysis dataset. Do not treat the script as a reproduction of reported effect estimates. Table S3 documents the exploratory design and its non-causal interpretation.
+The policy dataset contains all 63 mortality-panel countries. Thirty EUDA-reporting countries have harmonised, source-verified years for first official availability of a standard opioid agonist treatment medication; 33 countries outside that harmonised source scope are explicitly excluded and are not treated as never-adopters. All 30 included countries eventually adopted, so there are no verified never-treated controls and late-cohort support is sparse. No policy-effect point estimates are deposited or claimed. Run `validate_policy_adoption_data.py` before any exploratory analysis and consult `results_v17/policy_adoption_years_CODEBOOK.md`.
 
 ## Repository map
 
@@ -48,6 +48,7 @@ The policy event-study script requires `results_v17/policy_adoption_years.csv`, 
 |-- perturbation_robustness.py
 |-- predictive_validation.py
 |-- did_policy_analysis.py
+|-- validate_policy_adoption_data.py
 |-- lmic_extension_framework.py
 |-- make_supplementary_figures.py
 |-- results_v17/
@@ -104,7 +105,7 @@ WHO GHO responses can change. Use `results_v17/mechanism_variables_47countries.c
 
 ## Citation
 
-See `CITATION.cff`. Cite the archived release with DOI https://doi.org/10.5281/zenodo.21823300.
+See `CITATION.cff`. Cite the archived release with DOI https://doi.org/10.5281/zenodo.21830370.
 
 ## Licenses
 

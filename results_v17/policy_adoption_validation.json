@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "dataset_version": "1.1.0",
+  "panel_countries": 63,
+  "analysis_included": 30,
+  "scope_excluded": 33,
+  "panel_years": [
+    1992,
+    2018
+  ],
+  "adoption_year_range": [
+    1967,
+    2010
+  ],
+  "timing_groups": {
+    "in_panel": 14,
+    "pre_panel": 13,
+    "panel_start": 3
+  },
+  "unique_adoption_cohorts": [
+    1967,
+    1968,
+    1970,
+    1974,
+    1975,
+    1977,
+    1987,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    2001,
+    2007,
+    2010
+  ],
+  "countries_with_full_plus_minus_5_observation_window": [
+    "Cyprus",
+    "Czechia",
+    "Estonia",
+    "Norway",
+    "Romania",
+    "Slovakia",
+    "Turkey"
+  ],
+  "identification_warning": "All 30 analysis-scope countries eventually adopted standard OAT. There are no verified never-treated controls; identification can use only not-yet-treated comparisons, and support becomes sparse for late cohorts. Do not interpret the legacy pedagogical TWFE output as a causal estimate."
+}

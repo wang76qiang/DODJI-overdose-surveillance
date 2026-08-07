@@ -3,8 +3,9 @@ did_policy_analysis.py
 
 Template for a difference-in-differences analysis of overdose-mortality policy adoption.
 
-The author-coded policy-adoption-year input was not finalised. No policy-effect point estimates
-are part of this release; see README.md and Supplementary Table S3.
+The policy-adoption-year input is finalised and source-audited in version 1.1.0. No
+policy-effect point estimates are part of this release; see README.md, the dataset
+codebook, and Supplementary Table S3.
 
 This script provides a reproducible Python workflow that:
   1. Estimates an event-study specification using two-way fixed effects (TWFE)
@@ -21,11 +22,10 @@ recommend the R did package (Callaway & Sant'Anna, 2021) or the did2s package
 
 Inputs:
     - results_v17/policy_adoption_years.csv
-      Columns: country, first_treat_year, policy_type
-      where first_treat_year is the first year the country broadly implemented
-      at least one of: opioid-agonist therapy scale-out, naloxone distribution,
-      supervised consumption services, or decriminalisation/partial legal regulation.
-      Countries never treated should have first_treat_year = 0 or missing.
+      Required columns: country, first_treat_year, policy_type, analysis_included.
+      first_treat_year is the first year a standard opioid agonist treatment
+      medication was officially available nationally. Scope-excluded countries
+      have analysis_included = 0 and must not be used as untreated controls.
 
     - results_v17/annual_mortality_panel.csv (deposited; derived from annual_dodji_panel.csv)
       Columns: country, year, log_asdr (log age-standardised death rate)
@@ -46,6 +46,7 @@ Notes:
 """
 
 from pathlib import Path
+import sys
 import pandas as pd
 import numpy as np
 import statsmodels.formula.api as smf
@@ -56,11 +57,16 @@ POLICY_CSV = RESULTS_DIR / "policy_adoption_years.csv"
 MORT_CSV = RESULTS_DIR / "annual_mortality_panel.csv"
 
 
+def event_term(k):
+    """Return a formula-safe event-time variable name."""
+    return f"event_m{abs(k)}" if k < 0 else f"event_p{k}"
+
+
 def load_data():
     if not POLICY_CSV.exists():
         raise FileNotFoundError(
             f"{POLICY_CSV} not found. Please create this file with columns: "
-            "country, first_treat_year, policy_type"
+            "country, first_treat_year, policy_type, analysis_included"
         )
     if not MORT_CSV.exists():
         raise FileNotFoundError(
@@ -70,8 +76,19 @@ def load_data():
 
     policy = pd.read_csv(POLICY_CSV)
     mort = pd.read_csv(MORT_CSV)
+    required = {"country", "first_treat_year", "policy_type", "analysis_included"}
+    missing = required - set(policy.columns)
+    if missing:
+        raise ValueError(f"Policy file is missing required columns: {sorted(missing)}")
+    if policy["country"].duplicated().any():
+        duplicates = policy.loc[policy["country"].duplicated(), "country"].tolist()
+        raise ValueError(f"Policy file has duplicate countries: {duplicates}")
+    policy = policy.loc[policy["analysis_included"].eq(1)].copy()
+    if policy["first_treat_year"].isna().any():
+        raise ValueError("Every analysis-included country must have first_treat_year")
+    mort = mort.loc[mort["country"].isin(policy["country"])].copy()
     df = mort.merge(policy, on="country", how="left")
-    df["first_treat_year"] = df["first_treat_year"].replace(0, np.nan)
+    df["first_treat_year"] = pd.to_numeric(df["first_treat_year"], errors="raise")
     df["treated"] = df["first_treat_year"].notna().astype(int)
     df["post"] = (df["year"] >= df["first_treat_year"]).astype(int)
     df["treat"] = df["treated"] * df["post"]
@@ -89,12 +106,12 @@ def event_study(df, max_lead=5, max_lag=5):
 
     # Create event-time dummies, dropping t=-1
     for k in list(range(-max_lead, 0)) + list(range(1, max_lag + 1)):
-        df[f"et{k}"] = (df["event_time"] == k).astype(int)
+        df[event_term(k)] = (df["event_time"] == k).astype(int)
 
     # Keep only treated units and not-yet-treated controls
     df = df[(df["treated"] == 1) | (df["first_treat_year"].isna())].copy()
 
-    formula_parts = ["et" + str(k) for k in list(range(-max_lead, 0)) + list(range(1, max_lag + 1))]
+    formula_parts = [event_term(k) for k in list(range(-max_lead, 0)) + list(range(1, max_lag + 1))]
     formula = "log_asdr ~ " + " + ".join(formula_parts) + " + C(country) + C(year)"
 
     model = smf.ols(formula, data=df).fit(cov_type="cluster", cov_kwds={"groups": df["country"]})
@@ -103,11 +120,11 @@ def event_study(df, max_lead=5, max_lag=5):
     for k in list(range(-max_lead, 0)) + list(range(1, max_lag + 1)):
         rows.append({
             "event_time": k,
-            "beta": model.params[f"et{k}"],
-            "se": model.bse[f"et{k}"],
-            "p": model.pvalues[f"et{k}"],
-            "ci_lower": model.conf_int().loc[f"et{k}", 0],
-            "ci_upper": model.conf_int().loc[f"et{k}", 1],
+            "beta": model.params[event_term(k)],
+            "se": model.bse[event_term(k)],
+            "p": model.pvalues[event_term(k)],
+            "ci_lower": model.conf_int().loc[event_term(k), 0],
+            "ci_upper": model.conf_int().loc[event_term(k), 1],
         })
     return pd.DataFrame(rows)
 
@@ -165,9 +182,9 @@ def pre_trend_test(df, max_lead=5):
     df = df.copy()
     df["event_time"] = df["year"] - df["first_treat_year"]
     for k in range(-max_lead, 0):
-        df[f"et{k}"] = (df["event_time"] == k).astype(int)
+        df[event_term(k)] = (df["event_time"] == k).astype(int)
     df = df[(df["treated"] == 1) | (df["first_treat_year"].isna())].copy()
-    formula_parts = [f"et{k}" for k in range(-max_lead, 0)]
+    formula_parts = [event_term(k) for k in range(-max_lead, 0)]
     formula = "log_asdr ~ " + " + ".join(formula_parts) + " + C(country) + C(year)"
     model = smf.ols(formula, data=df).fit(cov_type="cluster", cov_kwds={"groups": df["country"]})
     hypotheses = " = ".join(formula_parts) + " = 0"
@@ -185,7 +202,13 @@ def main():
     print(f"Loaded {len(df)} country-year observations; "
           f"{df['country'].nunique()} countries; "
           f"{df['first_treat_year'].notna().sum()} treated unit-years.")
+    if "--estimate" not in sys.argv:
+        print("Policy-data validation passed. Estimation is disabled by default.")
+        print("Run validate_policy_adoption_data.py for the source/scope audit.")
+        print("The legacy estimator is pedagogical and is not publication-grade causal inference.")
+        return
 
+    print("\nWARNING: exploratory legacy estimates; do not interpret causally.")
     print("\n=== Event-study estimates ===")
     es = event_study(df, max_lead=5, max_lag=5)
     print(es.round(4).to_string(index=False))
