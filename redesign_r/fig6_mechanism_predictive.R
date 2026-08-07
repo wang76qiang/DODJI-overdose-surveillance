@@ -80,23 +80,23 @@ mk_mechanism <- function(df) {
               size = ggpt(FS_TINY), fontface = "bold",
               colour = df$col, family = TNR) +
     ## hero number + direct annotation with guiding arrow
-    annotate("text", x = 0.30, y = sig_row + 0.82, hjust = 0,
-             label = "\u03b2 = 0.062 *", size = ggpt(FS_HERO),
+    annotate("text", x = -0.115, y = sig_row + 0.82, hjust = 0,
+             label = "all BH-adjusted p \u2265 0.24", size = ggpt(FS_HERO - 2),
              fontface = "bold", colour = PAL$red_strong, family = TNR) +
-    annotate("text", x = 0.30, y = sig_row + 0.44, hjust = 0,
-             label = "p = 0.018 \u00b7 only significant\ndriver of 6 candidates",
+    annotate("text", x = -0.115, y = sig_row + 0.44, hjust = 0,
+             label = "weakest nominal signal: civil\nregistration p = 0.049 (raw)",
              size = ggpt(FS_TINY), fontface = "bold",
              colour = PAL$red_strong, family = TNR, lineheight = 0.95) +
-    annotate("segment", x = 0.27, xend = 0.150,
+    annotate("segment", x = 0.105, xend = -0.02,
              y = sig_row + 0.20, yend = sig_row + 0.14,
              colour = PAL$red_strong, linewidth = pt2mm(0.9),
              arrow = arrow(length = unit(1.8, "mm"), type = "closed")) +
     scale_y_continuous(breaks = df$y_i, labels = df$label,
                        expand = expansion(mult = c(0.06, 0.06))) +
-    coord_cartesian(xlim = c(-0.42, 1.18)) +
-    labs(x = "Standardised regression coefficient (\u03b2)\nwith 95% CI",
+    coord_cartesian(xlim = c(-0.12, 0.32)) +
+    labs(x = "Regression coefficient (\u03b2)\nwith 95% CI",
          y = NULL,
-         title = "Ill-defined cause fraction:\nthe only significant driver",
+         title = "No mechanism driver survives\nmultiplicity control",
          caption = "Higher DODJI = weaker surveillance", tag = "a") +
     theme_nature() + WHITE_BG + title_theme() +
     theme(plot.caption = element_text(size = FS_TINY, face = "bold",

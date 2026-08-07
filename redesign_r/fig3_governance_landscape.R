@@ -137,7 +137,7 @@ mk_tiles <- function(df) {
               size = ggpt(FS_TINY), colour = "white", alpha = 0.92, family = TNR) +
     scale_x_continuous(limits = c(0, 10), expand = c(0, 0)) +
     scale_y_continuous(limits = c(0.5, n_r + 0.5), expand = c(0, 0)) +
-    labs(title = "Regime sizes: 24 of 47 countries are low-burden / protected",
+    labs(title = "Regime sizes: 18 of 47 countries are medical-system-driven",
          tag = "b") +
     theme_void_nature() + title_theme(hjust = 0.5) +
     theme(plot.margin = margin(3, 3, 3, 3, "pt"))
@@ -186,7 +186,7 @@ mk_facet <- function(df, regime, ylab = FALSE) {
 mk_vignettes <- function(df) {
   vig <- data.frame(
     country = c("Iceland", "United States of America", "Estonia", "Slovenia"),
-    note = c("Small population, strong surveillance;\nhigh mortality triggers implementation",
+    note = c("High burden, worse-than-expected\nsurveillance \u2192 certification investment",
              "Visible crisis; dominant need is\nreal-time toxicology & service linkage",
              "High burden paired with\nabove-median surveillance concern",
              "Moderate burden, weak visibility;\npriority reclassified upward"),

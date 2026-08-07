@@ -1,0 +1,7 @@
+predictor,beta,se,p_value,p_bh
+who_ill_defined_pct,0.0114,0.0172,0.5123,0.7684
+who_cod_completeness_pct,0.0051,0.0132,0.6991,0.7902
+who_civil_reg_death_pct,-0.0322,0.0157,0.0493,0.243
+who_forensic_drug_monitor,0.0566,0.2107,0.7902,0.7902
+wb_life_expectancy,-0.0157,0.0234,0.5065,0.7684
+wb_comm_disease_death_pct,-0.0203,0.0112,0.081,0.243

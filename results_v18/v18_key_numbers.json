@@ -1,0 +1,346 @@
+{
+  "n": 47,
+  "movers": {
+    "n_countries": 47,
+    "up_by_10_or_more": 11,
+    "down_by_10_or_more": 11,
+    "stable": 25,
+    "low_or_mid_mortality_reclassified_surveillance_priority": 10,
+    "high_mortality_implementation_not_foundational_priority": 9
+  },
+  "up_movers": [
+    {
+      "country": "Belarus",
+      "mortality_rank": 12,
+      "combined_priority_rank": 2,
+      "rank_shift_up": 10
+    },
+    {
+      "country": "Slovenia",
+      "mortality_rank": 27,
+      "combined_priority_rank": 8,
+      "rank_shift_up": 19
+    },
+    {
+      "country": "Albania",
+      "mortality_rank": 32,
+      "combined_priority_rank": 9,
+      "rank_shift_up": 23
+    },
+    {
+      "country": "Malta",
+      "mortality_rank": 22,
+      "combined_priority_rank": 10,
+      "rank_shift_up": 12
+    },
+    {
+      "country": "Cyprus",
+      "mortality_rank": 26,
+      "combined_priority_rank": 13,
+      "rank_shift_up": 13
+    },
+    {
+      "country": "Portugal",
+      "mortality_rank": 29,
+      "combined_priority_rank": 14,
+      "rank_shift_up": 15
+    },
+    {
+      "country": "Bulgaria",
+      "mortality_rank": 36,
+      "combined_priority_rank": 16,
+      "rank_shift_up": 20
+    },
+    {
+      "country": "North Macedonia",
+      "mortality_rank": 38,
+      "combined_priority_rank": 17,
+      "rank_shift_up": 21
+    },
+    {
+      "country": "Monaco",
+      "mortality_rank": 43,
+      "combined_priority_rank": 20,
+      "rank_shift_up": 23
+    },
+    {
+      "country": "San Marino",
+      "mortality_rank": 46,
+      "combined_priority_rank": 26,
+      "rank_shift_up": 20
+    },
+    {
+      "country": "Andorra",
+      "mortality_rank": 47,
+      "combined_priority_rank": 29,
+      "rank_shift_up": 18
+    }
+  ],
+  "regime_stats": {
+    "Medical-system-driven": {
+      "n": 18,
+      "med_rank": 12.0,
+      "med_dodji": -0.47
+    },
+    "Low-burden / protected": {
+      "n": 13,
+      "med_rank": 35.0,
+      "med_dodji": -0.24
+    },
+    "Data-quality-limited": {
+      "n": 10,
+      "med_rank": 24.0,
+      "med_dodji": 0.6
+    },
+    "Insufficient exposure data": {
+      "n": 6,
+      "med_rank": 44.0,
+      "med_dodji": 1.04
+    }
+  },
+  "tier_stats": {
+    "Priority I": {
+      "n": 12,
+      "smin": 3.1,
+      "smax": 4.1
+    },
+    "Priority II": {
+      "n": 12,
+      "smin": 2.7,
+      "smax": 3.05
+    },
+    "Priority III": {
+      "n": 12,
+      "smin": 2.5,
+      "smax": 2.7
+    },
+    "Priority IV": {
+      "n": 11,
+      "smin": 1.3,
+      "smax": 2.5
+    }
+  },
+  "tier_ties": {
+    "II-III": {
+      "score": 2.7,
+      "countries": {
+        "Austria": "Priority II",
+        "Czechia": "Priority III",
+        "San Marino": "Priority III"
+      }
+    },
+    "III-IV": {
+      "score": 2.5,
+      "countries": {
+        "Russian Federation": "Priority III",
+        "Switzerland": "Priority III",
+        "Spain": "Priority III",
+        "South Korea": "Priority III",
+        "Republic of Moldova": "Priority IV",
+        "Bosnia and Herzegovina": "Priority IV"
+      }
+    }
+  },
+  "top12_mortality": [
+    {
+      "country": "Iceland",
+      "typology": "Data-quality-limited"
+    },
+    {
+      "country": "Belarus",
+      "typology": "Data-quality-limited"
+    },
+    {
+      "country": "Estonia",
+      "typology": "Data-quality-limited"
+    },
+    {
+      "country": "Australia",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "United States of America",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "Canada",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "Lithuania",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "Finland",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "United Kingdom",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "Norway",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "Denmark",
+      "typology": "Medical-system-driven"
+    },
+    {
+      "country": "Russian Federation",
+      "typology": "Medical-system-driven"
+    }
+  ],
+  "priority_I": [
+    "Iceland",
+    "Belarus",
+    "Estonia",
+    "Australia",
+    "Luxembourg",
+    "United States of America",
+    "Canada",
+    "Slovenia",
+    "Albania",
+    "Malta",
+    "Lithuania",
+    "New Zealand"
+  ],
+  "mechanism_regression": {
+    "n_obs": 39,
+    "r2": 0.808,
+    "ill_defined": {
+      "beta": 0.0114,
+      "se": 0.0172,
+      "p_value": 0.5123,
+      "p_bh": 0.7684
+    }
+  },
+  "robustness_stability": [
+    {
+      "check": "Primary vs 15-49 years age-standardised (extended set)",
+      "n": 37,
+      "spearman_rho": 0.829,
+      "spearman_p": 0.0,
+      "regime_stability": 0.811,
+      "priority_I_jaccard": 0.667
+    },
+    {
+      "check": "Primary vs 15-64 years age-standardised (extended set)",
+      "n": 37,
+      "spearman_rho": 0.84,
+      "spearman_p": 0.0,
+      "regime_stability": 0.838,
+      "priority_I_jaccard": 0.667
+    },
+    {
+      "check": "Primary vs 65+ years age-standardised (extended set)",
+      "n": 37,
+      "spearman_rho": 0.77,
+      "spearman_p": 0.0,
+      "regime_stability": 0.811,
+      "priority_I_jaccard": 0.538
+    },
+    {
+      "check": "Primary vs GBD+WHO divergence (European subset)",
+      "n": 30,
+      "spearman_rho": 0.71,
+      "spearman_p": 0.0,
+      "regime_stability": 0.9,
+      "priority_I_jaccard": 0.6
+    },
+    {
+      "check": "Non-GBD WHO-GHO/WB DODJI variant",
+      "n": 47,
+      "spearman_rho": 0.185,
+      "spearman_p": 0.2123,
+      "regime_stability": 0.511,
+      "priority_I_jaccard": 0.333
+    }
+  ],
+  "perturbation": {
+    "check": "DODJI score perturbation (SD=0.5, n=1000)",
+    "spearman_rho_mean": 0.783,
+    "spearman_rho_95ci_low": 0.674,
+    "spearman_rho_95ci_high": 0.874,
+    "regime_stability_mean": 0.817,
+    "regime_stability_95ci_low": 0.723,
+    "regime_stability_95ci_high": 0.915,
+    "priority_I_jaccard_mean": 0.625,
+    "priority_I_jaccard_95ci_low": 0.412,
+    "priority_I_jaccard_95ci_high": 0.846
+  },
+  "table2": [
+    {
+      "regime": "Medical-system-driven",
+      "n": 18,
+      "who_ill_defined_pct_mean": 7.66,
+      "who_ill_defined_pct_n": 18,
+      "who_cod_completeness_pct_mean": 99.53,
+      "who_cod_completeness_pct_n": 18,
+      "who_civil_reg_death_pct_mean": 99.6,
+      "who_civil_reg_death_pct_n": 18,
+      "who_forensic_drug_monitor_mean": 0.94,
+      "who_forensic_drug_monitor_n": 18,
+      "wb_gdp_per_capita_mean": 51815.09,
+      "wb_gdp_per_capita_n": 18,
+      "wb_life_expectancy_mean": 80.44,
+      "wb_life_expectancy_n": 18,
+      "wb_comm_disease_death_pct_mean": 12.6,
+      "wb_comm_disease_death_pct_n": 18
+    },
+    {
+      "regime": "Low-burden / protected",
+      "n": 13,
+      "who_ill_defined_pct_mean": 10.55,
+      "who_ill_defined_pct_n": 13,
+      "who_cod_completeness_pct_mean": 95.97,
+      "who_cod_completeness_pct_n": 13,
+      "who_civil_reg_death_pct_mean": 94.81,
+      "who_civil_reg_death_pct_n": 10,
+      "who_forensic_drug_monitor_mean": 0.8,
+      "who_forensic_drug_monitor_n": 10,
+      "wb_gdp_per_capita_mean": 26973.01,
+      "wb_gdp_per_capita_n": 13,
+      "wb_life_expectancy_mean": 79.55,
+      "wb_life_expectancy_n": 13,
+      "wb_comm_disease_death_pct_mean": 20.82,
+      "wb_comm_disease_death_pct_n": 13
+    },
+    {
+      "regime": "Data-quality-limited",
+      "n": 10,
+      "who_ill_defined_pct_mean": 11.18,
+      "who_ill_defined_pct_n": 10,
+      "who_cod_completeness_pct_mean": 92.07,
+      "who_cod_completeness_pct_n": 10,
+      "who_civil_reg_death_pct_mean": 93.89,
+      "who_civil_reg_death_pct_n": 10,
+      "who_forensic_drug_monitor_mean": 1.0,
+      "who_forensic_drug_monitor_n": 9,
+      "wb_gdp_per_capita_mean": 43294.63,
+      "wb_gdp_per_capita_n": 10,
+      "wb_life_expectancy_mean": 80.74,
+      "wb_life_expectancy_n": 10,
+      "wb_comm_disease_death_pct_mean": 15.32,
+      "wb_comm_disease_death_pct_n": 10
+    },
+    {
+      "regime": "Insufficient exposure data",
+      "n": 6,
+      "who_ill_defined_pct_mean": 15.02,
+      "who_ill_defined_pct_n": 5,
+      "who_cod_completeness_pct_mean": 99.17,
+      "who_cod_completeness_pct_n": 6,
+      "who_civil_reg_death_pct_mean": 96.48,
+      "who_civil_reg_death_pct_n": 3,
+      "who_forensic_drug_monitor_mean": 0.67,
+      "who_forensic_drug_monitor_n": 3,
+      "wb_gdp_per_capita_mean": 66112.51,
+      "wb_gdp_per_capita_n": 6,
+      "wb_life_expectancy_mean": 80.84,
+      "wb_life_expectancy_n": 6,
+      "wb_comm_disease_death_pct_mean": 23.74,
+      "wb_comm_disease_death_pct_n": 3
+    }
+  ]
+}

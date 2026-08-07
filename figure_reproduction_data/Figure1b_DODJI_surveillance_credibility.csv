@@ -2,30 +2,30 @@
 Albania,Albania,0,2.301977051011,Worse than expected,0
 Andorra,Andorra,1,1.11438575492967,Worse than expected,0
 Australia,Australia,0,-0.0473950988167358,As expected,0
-Austria,Austria,0,-0.336479730310334,As expected,1
-Belarus,Belarus,0,0.705410905117321,Worse than expected,0
-Belgium,Belgium,0,-0.429294254352914,Better than expected,1
+Austria,Austria,0,-0.336479730310334,As expected,0
+Belarus,Belarus,0,0.705410905117321,Worse than expected,1
+Belgium,Belgium,0,-0.429294254352914,As expected,0
 Bosnia and Herzegovina,Bosnia and Herzegovina,0,0.651864686754371,Worse than expected,0
 Bulgaria,Bulgaria,0,0.798993092189358,Worse than expected,0
-Canada,Canada,0,-0.247796370837058,As expected,1
+Canada,Canada,0,-0.247796370837058,As expected,0
 Chile,Chile,0,-0.662064144225183,Better than expected,0
 Costa Rica,Costa Rica,0,-0.592890590305497,Better than expected,0
 Croatia,Croatia,0,-0.118885919497889,As expected,0
 Cyprus,Cyprus,0,0.336640192911784,Worse than expected,0
 Czechia,Czechia,0,0.05149575720136,Worse than expected,0
-Denmark,Denmark,0,-0.749379643590862,Better than expected,1
-Estonia,Estonia,0,0.275918359965989,Worse than expected,0
-Finland,Finland,0,-0.562379010891408,Better than expected,1
+Denmark,Denmark,0,-0.749379643590862,Better than expected,0
+Estonia,Estonia,0,0.275918359965989,Worse than expected,1
+Finland,Finland,0,-0.562379010891408,Better than expected,0
 France,France,0,-0.529493079885903,Better than expected,0
 Germany,Germany,0,-0.867911067488752,Better than expected,0
-Iceland,Iceland,1,0.703428661206264,Worse than expected,0
+Iceland,Iceland,1,0.703428661206264,Worse than expected,1
 Israel,Israel,0,-0.0879640780853574,As expected,0
 Italy,Italy,0,-1.1202730531842,Better than expected,0
-Japan,Japan,0,-0.494881779081819,Better than expected,0
-Latvia,Latvia,0,-0.353688385154646,Better than expected,1
-Lithuania,Lithuania,0,-0.247311173501984,As expected,1
-Luxembourg,Luxembourg,1,0.567754662975557,Worse than expected,0
-Malta,Malta,1,0.521590727195709,Worse than expected,0
+Japan,Japan,0,-0.494881779081819,As expected,0
+Latvia,Latvia,0,-0.353688385154646,As expected,0
+Lithuania,Lithuania,0,-0.247311173501984,As expected,0
+Luxembourg,Luxembourg,1,0.567754662975557,Worse than expected,1
+Malta,Malta,1,0.521590727195709,Worse than expected,1
 Mexico,Mexico,0,-0.993692485366632,Better than expected,0
 Monaco,Monaco,1,2.27785197462129,Worse than expected,0
 Netherlands,Netherlands,0,-0.195248460218519,As expected,0
@@ -45,4 +45,4 @@ Switzerland,Switzerland,0,-0.744889107383162,Better than expected,0
 Turkey,Turkey,0,-0.309436333605774,As expected,0
 Ukraine,Ukraine,0,-0.508660216593089,Better than expected,0
 United Kingdom,United Kingdom,0,-0.766191163349263,Better than expected,0
-United States of America,United States of America,0,-0.25033193334784,As expected,1
+United States of America,United States of America,0,-0.25033193334784,As expected,0

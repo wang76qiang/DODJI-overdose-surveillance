@@ -199,7 +199,7 @@ pa <- ggplot() +
   scale_x_continuous(limits = c(0, 10)) +
   scale_y_continuous(limits = c(0, 10)) +
   theme_panel()
-pa <- panel_title(pa, "a", "10 countries rise,\n10 more fall in priority")
+pa <- panel_title(pa, "a", "11 countries rise,\n11 more fall in priority")
 
 ## ==================================== panel b1 — bivariate map, full world
 df_b <- df
@@ -349,21 +349,21 @@ pc_eu <- ggplot(world_c) +
   annotate("segment", x = -6.8, y = 56.8, xend = -3.6, yend = 54, colour = DARK,
            linewidth = pt2mm(0.5), lineend = "round") +
   annotate("point", x = -3.6, y = 54, size = 0.225, colour = INK) +
-  annotate("text", x = -12, y = 60.5, label = "UK\n\u221238 ranks", size = ggpt(FS_TINY),
+  annotate("text", x = -12, y = 60.5, label = "UK\n\u221217 ranks", size = ggpt(FS_TINY),
            fontface = "bold", colour = OKABE$blue, family = TNR,
            hjust = 0.5, lineheight = 0.95) +
   ## Norway: dot on the mainland, label over the open Norwegian Sea
   annotate("segment", x = 8.5, y = 67.3, xend = 16, yend = 68, colour = DARK,
            linewidth = pt2mm(0.5), lineend = "round") +
   annotate("point", x = 16, y = 68, size = 0.225, colour = INK) +
-  annotate("text", x = -1, y = 66.8, label = "Norway\n\u221235 ranks", size = ggpt(FS_TINY),
+  annotate("text", x = -1, y = 66.8, label = "Norway\n\u221215 ranks", size = ggpt(FS_TINY),
            fontface = "bold", colour = OKABE$blue, family = TNR,
            hjust = 0.5, lineheight = 0.95) +
   ## N. Macedonia: white-chip label north of the country, short leader
   annotate("segment", x = 21.6, y = 43.0, xend = 21.6, yend = 41.7, colour = DARK,
            linewidth = pt2mm(0.5), lineend = "round") +
   annotate("point", x = 21.6, y = 41.7, size = 0.225, colour = INK) +
-  annotate("text", x = 21.6, y = 44.6, label = "N. Macedonia\n+32 ranks", size = ggpt(FS_TINY),
+  annotate("text", x = 21.6, y = 44.6, label = "N. Macedonia\n+21 ranks", size = ggpt(FS_TINY),
            fontface = "bold", colour = OKABE$vermillion, family = TNR,
            hjust = 0.5, lineheight = 0.95) +
   coord_sf(xlim = EU_X, ylim = EU_Y, expand = FALSE) +
@@ -465,7 +465,7 @@ stories <- data.frame(
            "High burden, strong surveillance \u2192 early warning",
            "Moderate burden, weak visibility \u2192 surveillance investment",
            "Low reported rate, high DODJI \u2192 reclassified upward",
-           "Lower burden, strong visibility \u2192 sustain monitoring",
+           "High burden, strong visibility \u2192 sustain monitoring",
            "Microstate, sparse events \u2192 interpret with caution"),
   stringsAsFactors = FALSE
 )
@@ -476,7 +476,7 @@ stories$color <- REGIME_COLORS[stories$regime]
 stories$short <- cshort(stories$country)
 stories$stat <- vapply(seq_len(nrow(stories)), function(k) {
   r <- stories[k, ]
-  if (r$country == "Monaco") return("+42 ranks \u00b7 sparse events")
+  if (r$country == "Monaco") return(paste0("+", abs(r$rank_change), " ranks \u00b7 sparse events"))
   if (abs(r$rank_change) >= 10) {
     sgn <- if (r$rank_change > 0) "+" else "\u2212"
     return(paste0(sgn, abs(r$rank_change), " ranks \u00b7 DODJI ",

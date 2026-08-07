@@ -28,7 +28,7 @@ def strip(ax):
 
 # ================= Figure S1: annual DODJI trajectories =================
 panel = pd.read_csv('results_v17/annual_dodji_panel.csv')
-recl = pd.read_csv('results_v17/reclassification_table_v17.csv')
+recl = pd.read_csv('results_v18/reclassification_table_v18.csv')
 reg_map = dict(zip(recl.country, recl.typology))
 panel['regime'] = panel.country.map(reg_map).fillna('Additional (predictive sample)')
 

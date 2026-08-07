@@ -1,48 +1,48 @@
 country,mortality_rank,dodji_score,priority_score,combined_priority_rank,regime,reclassification_direction
-Monaco,43,2.27785197462129,4.35,1,Insufficient exposure data,Up >=10
-Albania,32,2.301977051011,4.25,2,Low-burden / protected,Up >=10
-Iceland,3,0.703428661206264,3.95,3,Medical-system-driven,Stable
-United States of America,1,-0.25033193334784,3.8,4,Medical-system-driven,Stable
-Bulgaria,36,0.798993092189358,3.65,5,Low-burden / protected,Up >=10
-North Macedonia,38,0.973625708604972,3.65,6,Data-quality-limited,Up >=10
-Estonia,7,0.275918359965989,3.65,7,Data-quality-limited,Stable
-Canada,2,-0.247796370837058,3.55,8,Medical-system-driven,Stable
-Malta,22,0.521590727195709,3.4,9,Low-burden / protected,Up >=10
-Slovenia,27,0.971496953135387,3.4,10,Data-quality-limited,Up >=10
-Australia,6,-0.0473950988167358,3.3,11,Medical-system-driven,Stable
-Austria,19,-0.336479730310334,3.3,12,Medical-system-driven,Stable
-New Zealand,18,-0.128096165210612,3.3,13,Medical-system-driven,Stable
-Luxembourg,14,0.567754662975557,3.15,14,Low-burden / protected,Stable
-San Marino,46,1.11851162510212,3.15,15,Insufficient exposure data,Up >=10
-Belarus,12,0.705410905117321,3.15,16,Low-burden / protected,Stable
-Cyprus,26,0.336640192911784,2.8,17,Data-quality-limited,Stable
-Lithuania,11,-0.247311173501984,2.6,18,Low-burden / protected,Stable
-Czechia,33,0.05149575720136,2.55,19,Data-quality-limited,Up >=10
-Latvia,15,-0.353688385154646,2.55,20,Low-burden / protected,Stable
-Andorra,47,1.11438575492967,2.45,21,Data-quality-limited,Up >=10
-Finland,5,-0.562379010891408,2.45,22,Low-burden / protected,Down >=10
-Belgium,20,-0.429294254352914,2.4,23,Medical-system-driven,Stable
-Croatia,24,-0.118885919497889,2.35,24,Data-quality-limited,Stable
-Serbia,34,-0.003669976997751,2.35,25,Low-burden / protected,Stable
-Bosnia and Herzegovina,45,0.651864686754371,2.3,26,Insufficient exposure data,Up >=10
-Portugal,29,0.622589328950462,2.2,27,Low-burden / protected,Stable
-Denmark,10,-0.749379643590862,2.0,28,Medical-system-driven,Down >=10
-Republic of Moldova,31,-0.197149119183562,1.95,29,Insufficient exposure data,Stable
-Poland,35,-0.217886228661285,1.85,30,Low-burden / protected,Stable
-Spain,23,-0.348452146159954,1.85,31,Low-burden / protected,Stable
-Israel,25,-0.0879640780853574,1.85,32,Low-burden / protected,Stable
-South Korea,30,-0.241864851427101,1.85,33,Low-burden / protected,Stable
-Russian Federation,9,-0.933234031301391,1.65,34,Low-burden / protected,Down >=10
-Ukraine,21,-0.508660216593089,1.65,35,Data-quality-limited,Down >=10
-Turkey,39,-0.309436333605774,1.6,36,Data-quality-limited,Stable
-Germany,17,-0.867911067488752,1.6,37,Medical-system-driven,Down >=10
-Switzerland,13,-0.744889107383162,1.6,38,Medical-system-driven,Down >=10
-Netherlands,28,-0.195248460218519,1.35,39,Low-burden / protected,Down >=10
-Costa Rica,41,-0.592890590305497,1.25,40,Low-burden / protected,Stable
-France,16,-0.529493079885903,1.25,41,Low-burden / protected,Down >=10
-United Kingdom,4,-0.766191163349263,1.25,42,Low-burden / protected,Down >=10
-Norway,8,-0.706645843856076,1.0,43,Low-burden / protected,Down >=10
-Japan,44,-0.494881779081819,1.0,44,Low-burden / protected,Stable
-Italy,37,-1.1202730531842,1.0,45,Low-burden / protected,Stable
-Mexico,40,-0.993692485366632,1.0,46,Low-burden / protected,Stable
-Chile,42,-0.662064144225183,1.0,47,Low-burden / protected,Stable
+Iceland,3,0.703428661206264,4.1,1,Data-quality-limited,Stable
+Belarus,12,0.705410905117321,3.8,2,Data-quality-limited,Up >=10
+Estonia,7,0.275918359965989,3.75,3,Data-quality-limited,Stable
+Australia,6,-0.0473950988167358,3.65,4,Medical-system-driven,Stable
+Luxembourg,14,0.567754662975557,3.6,5,Data-quality-limited,Stable
+United States of America,1,-0.25033193334784,3.45,6,Medical-system-driven,Stable
+Canada,2,-0.247796370837058,3.45,7,Medical-system-driven,Stable
+Slovenia,27,0.971496953135387,3.3,8,Data-quality-limited,Up >=10
+Albania,32,2.301977051011,3.3,9,Data-quality-limited,Up >=10
+Malta,22,0.521590727195709,3.25,10,Data-quality-limited,Up >=10
+Lithuania,11,-0.247311173501984,3.15,11,Medical-system-driven,Stable
+New Zealand,18,-0.128096165210612,3.1,12,Medical-system-driven,Stable
+Cyprus,26,0.336640192911784,3.05,13,Data-quality-limited,Up >=10
+Portugal,29,0.622589328950462,3.05,14,Data-quality-limited,Up >=10
+Finland,5,-0.562379010891408,3.0,15,Medical-system-driven,Down >=10
+Bulgaria,36,0.798993092189358,2.95,16,Insufficient exposure data,Up >=10
+North Macedonia,38,0.973625708604972,2.95,17,Insufficient exposure data,Up >=10
+Croatia,24,-0.118885919497889,2.9,18,Low-burden / protected,Stable
+Israel,25,-0.0879640780853574,2.9,19,Low-burden / protected,Stable
+Monaco,43,2.27785197462129,2.85,20,Insufficient exposure data,Up >=10
+United Kingdom,4,-0.766191163349263,2.8,21,Medical-system-driven,Down >=10
+Latvia,15,-0.353688385154646,2.8,22,Medical-system-driven,Stable
+Norway,8,-0.706645843856076,2.75,23,Medical-system-driven,Down >=10
+Austria,19,-0.336479730310334,2.7,24,Medical-system-driven,Stable
+Czechia,33,0.05149575720136,2.7,25,Data-quality-limited,Stable
+San Marino,46,1.11851162510212,2.7,26,Insufficient exposure data,Up >=10
+Netherlands,28,-0.195248460218519,2.65,27,Low-burden / protected,Stable
+Serbia,34,-0.003669976997751,2.65,28,Low-burden / protected,Stable
+Andorra,47,1.11438575492967,2.65,29,Insufficient exposure data,Up >=10
+Denmark,10,-0.749379643590862,2.6,30,Medical-system-driven,Down >=10
+France,16,-0.529493079885903,2.6,31,Medical-system-driven,Down >=10
+Belgium,20,-0.429294254352914,2.55,32,Medical-system-driven,Down >=10
+Russian Federation,9,-0.933234031301391,2.5,33,Medical-system-driven,Down >=10
+Switzerland,13,-0.744889107383162,2.5,34,Medical-system-driven,Down >=10
+Spain,23,-0.348452146159954,2.5,35,Medical-system-driven,Down >=10
+South Korea,30,-0.241864851427101,2.5,36,Low-burden / protected,Stable
+Republic of Moldova,31,-0.197149119183562,2.5,37,Low-burden / protected,Stable
+Bosnia and Herzegovina,45,0.651864686754371,2.5,38,Insufficient exposure data,Stable
+Ukraine,21,-0.508660216593089,2.45,39,Medical-system-driven,Down >=10
+Poland,35,-0.217886228661285,2.35,40,Low-burden / protected,Stable
+Germany,17,-0.867911067488752,2.25,41,Medical-system-driven,Down >=10
+Turkey,39,-0.309436333605774,2.0,42,Low-burden / protected,Stable
+Japan,44,-0.494881779081819,1.6,43,Low-burden / protected,Stable
+Costa Rica,41,-0.592890590305497,1.55,44,Low-burden / protected,Stable
+Chile,42,-0.662064144225183,1.5,45,Low-burden / protected,Stable
+Italy,37,-1.1202730531842,1.4,46,Low-burden / protected,Stable
+Mexico,40,-0.993692485366632,1.3,47,Low-burden / protected,Stable

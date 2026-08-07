@@ -144,8 +144,8 @@ mk_tiers <- function(df) {
   r <- df$combined_priority_rank
   tiers <- data.frame(
     tier = paste0("Priority ", c("I", "II", "III", "IV")),
-    rng = c("rank 1\u20138", "rank 9\u201317", "rank 18\u201334", "rank 35\u201347"),
-    count = c(sum(r <= 8), sum(r >= 9 & r <= 17), sum(r >= 18 & r <= 34), sum(r >= 35)),
+    rng = c("rank 1\u201312", "rank 13\u201324", "rank 25\u201336", "rank 37\u201347"),
+    count = c(sum(r <= 12), sum(r >= 13 & r <= 24), sum(r >= 25 & r <= 36), sum(r >= 37)),
     color = PRIORITY_COLORS,
     y = c(8.0, 5.9, 3.8, 1.7)
   )
@@ -217,7 +217,7 @@ mk_histogram <- function(df) {
              arrow = grid::arrow(length = grid::unit(1.5, "mm"), type = "closed")) +
     scale_x_continuous(breaks = seq(-40, 40, 10), limits = c(-46, 51)) +
     scale_y_continuous(limits = c(0, ymax), expand = c(0, 0)) +
-    labs(title = "Shifts pile near zero; extremes reach +42/\u221238",
+    labs(title = "Shifts pile near zero; extremes reach +23/\u221224",
          x = "Rank shift (mortality rank \u2212 DODJI-informed rank)", y = "Density",
          tag = "d") +
     theme_nature() + TITLE_THEME +
